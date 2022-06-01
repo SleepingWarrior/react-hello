@@ -1,12 +1,14 @@
 import React from "react";
-import "./App.css";
+import "./index.css"
 import Item from "./components/Item";
 import user from "./user";
+import AlertDismissible from "./components/Alert";
 
 const { interests } = user; //Destructure the object to get the array interests
 function App() {
   return (
-    <div className="container">
+    <div className="app-container">
+      <AlertDismissible />
       <Item //Pass the properties as attributes of the element "Item"
         name={user.name}
         surname={user.surname}
