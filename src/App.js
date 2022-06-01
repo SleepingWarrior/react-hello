@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Item from "./components/Item";
+import user from "./user";
 
+const { interests } = user; //Destructure the object to get the array interests
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Item //Pass the properties as attributes of the element "Item"
+        name={user.name}
+        surname={user.surname}
+        date_of_birth={user.date_of_birth}
+        country={user.country}
+        email={user.email}
+        telephone={user.telephone}
+        company={user.company}
+        interests={interests}
+      />
     </div>
   );
 }
