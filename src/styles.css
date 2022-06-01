@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  background-color: #4c3575;
+  color: white;
+}
+
+.image {
+  width: 30rem;
+}
+
+h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top:2rem;
+}
+
+.app-container {
+  font-size: 2.5rem;
+}
+
+.list-interests {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.item-container {
+  /* border: solid 1px white; */
+  padding-left: 3rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 5rem;
+  font-size: 2.5rem;
+  width: 30rem;
+}
+
+.links:hover {
+  color: white;
+}
+
+.nav-container {
+  margin-left: 0rem;
+  width: 100%;
+}

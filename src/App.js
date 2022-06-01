@@ -1,14 +1,14 @@
 import React from "react";
-import "./index.css"
+import "./index.css";
 import Item from "./components/Item";
 import user from "./user";
-import AlertDismissible from "./components/Alert";
+import NavBar from "./components/Navbar";
 
 const { interests } = user; //Destructure the object to get the array interests
 function App() {
   return (
     <div className="app-container">
-      <AlertDismissible />
+      <NavBar fixed="top" />
       <Item //Pass the properties as attributes of the element "Item"
         name={user.name}
         surname={user.surname}

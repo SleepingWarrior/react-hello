@@ -1,12 +1,13 @@
 import React from "react";
-import "../index.css"
+import "../styles.css";
+const image = window.location.origin + "/images/profile-image.png";
 
-
+//Render the user with the details from the user-object passed in as props.
 function createUser(props) {
   return (
     <div className="item-container">
-      <h1>My Name is {props.name + " " + props.surname}</h1>
-      <img className="image" src="" alt="fabian" />
+      <h1>Details of {props.name + " " + props.surname}</h1>
+      <img className="image" src={image} alt="fabian" />
       <div>
         <h2>Personal Details</h2>
         <ul>
